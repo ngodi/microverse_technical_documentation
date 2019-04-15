@@ -1,21 +1,3 @@
-@media only screen and (max-width: 800px) {
-	body{
-		display: flex;
-		flex-direction: column;
-
-
-	}
-
-	#navbar{
-		display:flex;
-		flex-direction: column;
-		font-size: 10px;
-
-
-	}
-
-
-}
 
 
 body{
@@ -23,44 +5,101 @@ body{
 	padding: 0;
 	margin: 0;
 }
-#main-doc{
-	width: 1200px;
-	margin: auto;
 
-}
-.main-section header{
-	font-weight: bold;
-	font-size: 30px;
-}
+
 #navbar{
 	display:flex;
 	flex-direction: column;
-	width: 18%;
+	
 	border-right: 2px solid grey;
 
 }
 
-a{
-	border-top: 1px solid black;
-	text-decoration: none;
-	color:black;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
-
-
-}
 #navbar header{
 	font-weight: bold;
 	font-size: 30px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
 	position: fixed;
 	z-index: 1;
-	margin-bottom: 60px;
 
+}
+
+#navbar ul{
+	position: fixed;
+	display:flex;
+	flex-direction: column;
+	margin-top: 60px;
+	height: 600px;
+	width: 200px;
+	overflow-y: scroll;
+
+	
+}
+
+
+#navbar ul li{
+	list-style-type: none;
+    border-top: 1px solid black;
+    margin-left: -40px;
+    padding:20px 20px;
+}
+
+#navbar ul li a{
+	
+	text-decoration: none;
+	color:black;
+
+}
+
+
+#main-doc{
+	width: 1000px;
+	margin: auto;
+
+}
+
+.main-section {
+	margin-left: 100px;
+}
+
+.main-section header{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+#navbar header{
+	font-weight: bold;
+	font-size: 30px;
+	position: relative;
+
+
+}
+
+	body{
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
+#navbar{
+	display:flex;
+	flex-direction: column;
+	width: 100%;
+	border: 2px solid grey;
+
+}
+
+#navbar ul{
+	position: relative;
+	display:flex;
+	flex-direction: column;
+	height: 500px;
+	width: 1000px;
+	overflow-y: scroll;
+
+	
+}
 
 }
